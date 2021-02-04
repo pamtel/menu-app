@@ -1,7 +1,6 @@
 import React from 'react'
 
 function MenuItem({source}) {
-    console.log(source);
     return (
         <div className="mb-5 flex">
             <div style={{maxWidth: '40%', marginRight: "15px", border: "3px solid #d97706", borderRadius:"5px"}}>
