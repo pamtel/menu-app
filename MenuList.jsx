@@ -1,20 +1,17 @@
 import React from 'react'
-// import CategoryLink from './CategoryLink'
 import MenuItem from './MenuItem'
 
-function MenuList({menuData}) {
-    const menuList = menuData.map((source) => (
-        <div>
-            <MenuItem
-            key={source.id}
-            source={source}
-            />
-        </div>
-        
-    ))
+function MenuList({item}) {
+
+    const menuListComponent = item.map((data) => (
+       <MenuItem
+        key={data.id}
+        source={data} />
+        ))
+
     return (
         <div className="md:grid grid-cols-2 gap-8">
-                {menuList}
+                { menuListComponent }
         </div>
     )
 }
